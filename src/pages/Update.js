@@ -2,7 +2,7 @@ import React from 'react'
 
 const Update = () => {
   return (
-    <div>Aktualizacja</div>
+    <div className='page update'>Aktualizacja</div>
   )
 }
 
