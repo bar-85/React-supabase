@@ -1,10 +1,42 @@
 import supabase from '../config/supabaseClient'
+import { useEffect, useState } from 'react'
+import NotebookCard from '../components/NotebookCard'
 
 const Home = () => {
-  console.log(supabase)
+  const [fetchError, setFetchError] = useState(null)
+  const [notebook, setNotebook] = useState(null)
+
+  useEffect(() => {
+    const fetchNotebook = async () => {
+      const { data, error } = await supabase
+      .from('notebook')
+      .select()
+
+      if (error) {
+        setFetchError('Nie można pobrać notatek')
+        setNotebook(null)
+        console.log(error)
+      }
+      if (data) {
+        setNotebook(data)
+        setFetchError(null)
+      }
+    }
+    fetchNotebook()
+  }, [])
+
   return (
     <div className='page home'>
-      Dom
+      {fetchError && (<p>{fetchError}</p>)}
+      {notebook && (
+        <div className='notebook'>
+          <div className='notebook-grid'>
+          {notebook.map(note => (
+            <NotebookCard key={note.id} note={note}/>
+          ))}
+          </div>
+        </div>
+      )}
     </div>
   )
 }
