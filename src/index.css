@@ -2,7 +2,7 @@
 
 :root {
 	--green: #12bc31;
-  --bgreen: #026514;
+	--bgreen: #026514;
 	--blue: #214eca;
 }
 
@@ -18,19 +18,19 @@ body {
 }
 
 header {
-  text-align: center;
-  font-size: 1.2rem;
-  padding: 0.5rem;
+	text-align: center;
+	font-size: 1.2rem;
+	padding: 0.5rem;
 	background: var(--green);
-  color: white;
-  text-transform: uppercase;
+	color: white;
+	text-transform: uppercase;
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 0px 3px var(--green);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 3px var(--green);
 }
 
 nav a {
@@ -40,29 +40,60 @@ nav a {
 	text-transform: uppercase;
 	font-size: 1.2rem;
 	transition: 0.5s;
-  color: var(--green);
+	color: var(--green);
 }
 
 nav a:hover {
 	color: var(--bgreen);
-  text-shadow: 0px 0px 1px var(--bgreen);
+	text-shadow: 0px 0px 1px var(--bgreen);
 }
 
 .page {
 	max-width: 1200px;
 	margin: 20px auto;
 	padding: 20px;
-	font-weight: bold;
 }
 
-@media screen and (max-width: 480px) {
+/* Notebook card grid */
+.notebook-grid {
+	margin: 3rem auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+}
+
+.note-card {
+	text-align: center;
+	width: 100%;
+	padding: 1.5rem;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 10px var(--green);
+	border-radius: 3rem;
+	position: relative;
+}
+
+h3 {
+	color: var(--green);
+}
+
+@media screen and (max-width: 560px) {
 	header {
 		font-size: 0.8rem;
 	}
 
 	nav a {
 		font-size: 0.8rem;
-    margin: 1rem 1.3rem;
+		margin: 1rem 1.3rem;
+	}
+
+	.notebook-grid {
+		grid-template-columns: 1fr;
+		margin: 0.5rem auto;
+		gap: 1.5rem;
+	}
+
+	.note-card {
+		font-size: 0.8rem;
 	}
 }
 
@@ -72,6 +103,15 @@ nav a:hover {
 	}
 
 	nav a {
+		font-size: 0.6rem;
+	}
+
+	.notebook-grid {
+		margin: 0.1rem auto;
+		gap: 1rem;
+	}
+
+	.note-card {
 		font-size: 0.6rem;
 	}
 }
