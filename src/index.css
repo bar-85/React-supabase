@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
-
 :root {
 	--green: #12bc31;
 	--bgreen: #026514;
@@ -14,7 +12,10 @@ h3 {
 
 body {
 	margin: 0;
-	font-family: 'Poppins';
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 header {
@@ -54,7 +55,6 @@ nav a:hover {
 	padding: 20px;
 }
 
-/* Notebook card grid */
 .notebook-grid {
 	margin: 3rem auto;
 	display: grid;
@@ -68,12 +68,55 @@ nav a:hover {
 	padding: 1.5rem;
 	box-sizing: border-box;
 	box-shadow: 1px 1px 10px var(--green);
-	border-radius: 3rem;
+	border-radius: 2rem;
 	position: relative;
 }
 
 h3 {
 	color: var(--green);
+}
+
+form {
+	font-size: 1rem;
+	text-align: center;
+	box-shadow: 1px 1px 10px var(--green);
+	padding: 1.5rem;
+	max-width: 480px;
+	margin: 0 auto;
+	border-radius: 2rem;
+}
+
+label {
+	font-size: 1rem;
+	color: var(--green);
+	font-weight: 500;
+}
+
+input,
+textarea {
+	display: block;
+	width: 100%;
+	padding: 0.6rem;
+	box-sizing: border-box;
+	border: 1px solid var(--green);
+	background-color: #a4fbb427;
+	border-radius: 0.5rem;
+	margin: 10px 0 20px 0;
+}
+
+button {
+	background: var(--green);
+	font-size: 1rem;
+	color: white;
+	border: 0;
+	border-radius: 0.5rem;
+	padding: 0.8rem;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+button:hover {
+	background-color: var(--bgreen);
 }
 
 @media screen and (max-width: 560px) {
