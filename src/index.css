@@ -82,7 +82,7 @@ form {
 	box-shadow: 1px 1px 10px var(--green);
 	padding: 1.5rem;
 	max-width: 480px;
-	margin: 0 auto;
+	margin: 20px auto;
 	border-radius: 2rem;
 }
 
@@ -115,11 +115,16 @@ button {
 	transition: 0.5s;
 }
 
+.buttonEdit {
+	padding: 0.5rem;
+	margin: 1rem 0rem 0.3rem 0rem;
+}
+
 button:hover {
 	background-color: var(--bgreen);
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 700px) {
 	header {
 		font-size: 0.8rem;
 	}
@@ -136,6 +141,10 @@ button:hover {
 	}
 
 	.note-card {
+		font-size: 0.8rem;
+	}
+
+	.buttonEdit {
 		font-size: 0.8rem;
 	}
 }
@@ -155,6 +164,10 @@ button:hover {
 	}
 
 	.note-card {
+		font-size: 0.6rem;
+	}
+
+	.buttonEdit {
 		font-size: 0.6rem;
 	}
 }
