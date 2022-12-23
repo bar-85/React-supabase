@@ -117,14 +117,22 @@ button {
 	transition: 0.5s;
 }
 
+button:hover {
+	background-color: var(--lgreen);
+	color: var(--bgreen);
+}
+
 .buttonEdit {
 	padding: 0.5rem;
 	margin: 1rem 0rem 0.3rem 0rem;
 }
 
-button:hover {
-	background-color: var(--lgreen);
-	color: var(--bgreen);
+.buttonDelete {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	border: none;
+	padding: 0.4rem;
 }
 
 @media screen and (max-width: 700px) {
