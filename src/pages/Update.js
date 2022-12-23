@@ -14,14 +14,14 @@ const Update = () => {
 
 		if (!title || !method) {
 			setFormError('Proszę uzupełnić wszystkie pola')
-      return
+			return
 		}
 
 		const { data, error } = await supabase
-    .from('notebook')
-    .update({ title, method })
-    .eq('id', id)
-    .select()
+		.from('notebook')
+		.update({ title, method })
+		.eq('id', id)
+		.select()
 
 		if (error) {
 			console.log(error)
@@ -37,10 +37,10 @@ const Update = () => {
 	useEffect(() => {
 		const fetchNotebook = async () => {
 			const { data, error } = await supabase
-      .from('notebook')
-      .select()
-      .eq('id', id)
-      .single()
+			.from('notebook')
+			.select()
+			.eq('id', id)
+			.single()
 
 			if (error) {
 				navigate('/', { replace: true })
