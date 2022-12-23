@@ -6,6 +6,12 @@ const Home = () => {
   const [fetchError, setFetchError] = useState(null)
   const [notebook, setNotebook] = useState(null)
 
+  const handleDelete = (id) => {
+    setNotebook(prevNotebook => {
+      return prevNotebook.filter(n => n.id !== id)
+    })
+  }
+
   useEffect(() => {
     const fetchNotebook = async () => {
       const { data, error } = await supabase
@@ -32,7 +38,7 @@ const Home = () => {
         <div className='notebook'>
           <div className='notebook-grid'>
           {notebook.map(note => (
-            <NotebookCard key={note.id} note={note}/>
+            <NotebookCard key={note.id} note={note} onDelete={handleDelete}/>
           ))}
           </div>
         </div>
