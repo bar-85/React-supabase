@@ -42,7 +42,7 @@ const Home = () => {
 						<button onClick={toggleVisibility}>Sortuj</button>
 						{toggle && (
 							<div className='order-button'>
-								<button onClick={() => setOrderBy('created_at')}>Data</button>
+								<button onClick={() => setOrderBy('created_at')}>Data dodania</button>
 								<button onClick={() => setOrderBy('title')}>Tytuł</button>
 							</div>
 						)}
