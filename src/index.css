@@ -135,6 +135,16 @@ button:hover {
 	padding: 0.4rem;
 }
 
+.order-by {
+	font-size: 1rem;
+	text-align: center;
+	margin: 0.5rem;
+}
+
+.order-button button{
+	margin: 0.5rem;
+}
+
 @media screen and (max-width: 700px) {
 	header {
 		font-size: 0.8rem;
@@ -155,8 +165,16 @@ button:hover {
 		font-size: 0.8rem;
 	}
 
-	.buttonEdit {
+	button {
 		font-size: 0.8rem;
+	}
+
+	.page {
+		margin: 0;
+	}
+
+	.order-by {	
+		margin: 1rem;
 	}
 }
 
@@ -178,7 +196,8 @@ button:hover {
 		font-size: 0.6rem;
 	}
 
-	.buttonEdit {
+	button{
 		font-size: 0.6rem;
 	}
+
 }
