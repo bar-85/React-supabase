@@ -25,9 +25,9 @@ const NotebookCard = ({ note, onDelete}) => {
       <p>{note.method}</p>
       <div className="buttons">
         <Link to={'/' + note.id}>
-          <button className="buttonEdit">📝 Edytuj</button>
+          <button className="button-edit">📝 Edytuj</button>
         </Link>
-        <button className="buttonDelete" onClick={handleDelete}>❌</button>
+        <button className="button-delete" onClick={handleDelete}>❌</button>
       </div>
     </div>
   )

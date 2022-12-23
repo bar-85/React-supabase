@@ -122,12 +122,12 @@ button:hover {
 	color: var(--bgreen);
 }
 
-.buttonEdit {
+.button-edit {
 	padding: 0.5rem;
 	margin: 1rem 0rem 0.3rem 0rem;
 }
 
-.buttonDelete {
+.button-delete {
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
