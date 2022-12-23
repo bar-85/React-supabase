@@ -1,6 +1,45 @@
-<h1 align="center"> React - Notatnik hodowcy </h >
+<h1 align="center"> React Supabase - Notatnik hodowcy </h >
 <br />
 <br />
+<h2 align="left"> Responsywna strona internetowa: </h2>
+* Dodaj notatkę
+<br />
+* Edytuj notatkę
+<br />
+* Usuń notatkę
+<br />
+* Sortuj według daty dodania oraz tytułu
+<br />
+<br />
+Stronę można zobaczyć pod adresem: https://react-supabase.netlify.app/
+<br />
+<h3 align="left"> Technologie: </h3>
+* JavaScript / React - React Router (Hooks)
+<br />
+* CSS
+<br />
+* Baza danych - Supabase https://supabase.com/
+<br />
+<br />
+
+![Screenshot_5](https://user-images.githubusercontent.com/105555319/209408334-5ea858fb-c9f7-433f-85e3-f4dcf014609f.jpg)
+<br />
+<br />
+![Screenshot_6](https://user-images.githubusercontent.com/105555319/209408351-fb56448d-33c2-44bd-a1a1-f6cc99d82ab2.jpg)
+<br />
+<br />
+![Screenshot_7](https://user-images.githubusercontent.com/105555319/209408357-0296d04c-d8ff-45f5-ba03-01250c80eee1.jpg)
+<br />
+<br />
+![Screenshot_8](https://user-images.githubusercontent.com/105555319/209408363-f997b33b-ff22-4cf5-8e02-8e938f72a213.jpg)
+<br />
+<br />
+![Screenshot_9](https://user-images.githubusercontent.com/105555319/209408371-5bc3122b-c49e-4309-bf02-41a1789654f7.jpg)
+
+
+
+
+
 
 # Getting Started with Create React App
 
